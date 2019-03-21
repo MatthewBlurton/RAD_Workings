@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Manufacturer extends Model
+class GameType extends Model
 {
     public function games() {
         return $this->hasMany(Game::class);

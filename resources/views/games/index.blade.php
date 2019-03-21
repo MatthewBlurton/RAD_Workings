@@ -6,15 +6,15 @@
 
 @section('content')
     <header>
-        <h1>Maufacturers</h1>
+        <h1>Games</h1>
     </header>
     <section>
         <ul class="list-unstyled">
-            @foreach($manufacturers as $aMaker)
+            @foreach($games as $aGame)
                 <li class="row">
-                    <b class="col-1">{{ $aMaker->id }}</b>
-                    <span class="col">{{ $aMaker->name }}</span>
-                    <a href="/manufacturers/{{ $aMaker->id }}" class="col">Details</a>
+                    <b class="col-1">{{ $aGame->id }}</b>
+                    <span class="col">{{ $aGame->name }}</span>
+                    <a href="/games/{{ $aGame->id }}" class="col">Details</a>
                 </li>
             @endforeach
         </ul>

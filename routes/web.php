@@ -11,11 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Pages@index');
+
+Route::get('/about', 'Pages@about');
+
+Route::get('/contact', 'Pages@contact');
 
 // when http://domain/manufacturers is visited
 // run the index method in the ManufacturersController
 Route::get('/manufacturers', 'ManufacturersController@index');
 Route::get('/manufacturers/{manufacturer}', 'ManufacturersController@show');
+
+// Routes for Games
+Route::get('/games', 'GamesController@index');
+Route::get('/games/{game}', 'GamesController@show');
