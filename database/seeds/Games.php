@@ -22,5 +22,17 @@ class Games extends Seeder
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ]);
+
+        // Matthew's Game data
+        DB::table('games')->insert([
+            'name' => 'DOOM',
+            'manufacturer_id' => 9,
+            'game_type_id' => 4,
+            'min_age' => 15,
+            'max_age' => null,
+            'min_players' => 1,
+            'created_at' => DB::raw('CURRENT_TIMESTAMP'),
+            'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
+        ]);
     }
 }

@@ -59,5 +59,38 @@ class Manufacturers extends Seeder
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ]);
+
+        // Matthew's Manufacturer data
+        DB::table('manufacturers')->insert([
+            'name' => 'Alderac Entertainment Group',
+            'city' => 'San Clemente',
+            'country' => 'US',
+            'website'=>'https://www.alderac.com',
+            'created_at' => DB::raw('CURRENT_TIMESTAMP'),
+            'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
+        ]);
+        DB::table('manufacturers')->insert([
+            'name' => 'Mattel',
+            'city' => 'El Segundo',
+            'country' => 'US',
+            'website'=>'https://www.mattel.com',
+            'created_at' => DB::raw('CURRENT_TIMESTAMP'),
+            'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
+        ]);
+        DB::table('manufacturers')->insert([
+            'name' => 'id Software',
+            'city' => 'Richardson',
+            'country' => 'US',
+            'website'=>'https://www.idsoftware.com',
+            'created_at' => DB::raw('CURRENT_TIMESTAMP'),
+            'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
+        ]);
+        DB::table('manufacturers')->insert([
+            'name' => 'Zima',
+            'city' => 'Prague',
+            'country' => 'CZ',
+            'created_at' => DB::raw('CURRENT_TIMESTAMP'),
+            'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
+        ]);
     }
 }
